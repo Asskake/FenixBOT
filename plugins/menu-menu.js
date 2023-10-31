@@ -55,118 +55,118 @@ await conn.sendMessage(m.chat, {text: `Complete!`, edit: key})
 ╚══════════════════════✧
 ‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 ╔═══════ *⌈ MENU ⌋* ═══════✧
-║ _${usedPrefix}terminosycondiciones_
-║ _${usedPrefix}grupos_
-║ _${usedPrefix}estado_
-║ _${usedPrefix}infobot_
-║ _${usedPrefix}speedtest_
-║ _${usedPrefix}donar_
-║ _${usedPrefix}owner_
-║ _${usedPrefix}script_
-║ _${usedPrefix}join *<enlace>
+║ ❐ ${usedPrefix}terminosycondiciones
+║ ❐ ${usedPrefix}grupos
+║ ❐ ${usedPrefix}estado
+║ ❐ ${usedPrefix}infobot
+║ ❐ ${usedPrefix}speedtest
+║ ❐ ${usedPrefix}donar
+║ ❐ ${usedPrefix}owner
+║ ❐ ${usedPrefix}script
+║ ❐ ${usedPrefix}join *<enlace>
 ╚══════════════════════✧
 ‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
 
 ╔═══════ *⌈ JADI BOT ⌋* ═══════✧
-║ _${usedPrefix}serbot --code_
-║ _${usedPrefix}serbot_
-║ _${usedPrefix}deletebot_
-║ _${usedPrefix}token
-║ _${usedPrefix}stop_
-║ _${usedPrefix}bots_
+║ ❐ ${usedPrefix}serbot --code
+║ ❐ ${usedPrefix}serbot
+║ ❐ ${usedPrefix}deletebot
+║ ❐ ${usedPrefix}token
+║ ❐ ${usedPrefix}stop
+║ ❐ ${usedPrefix}bots
 ╚══════════════════════✧
 
 ╔═══════ *⌈ USER ⌋* ═══════✧
-║ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
-║ _${usedPrefix}fake *<texto1> <@tag> <texto2>*_
-║ _${usedPrefix}ppt *<papel / tijera /piedra>*_
-║ _${usedPrefix}prostituto *<nombre / @tag>*_
-║ _${usedPrefix}prostituta *<nombre / @tag>*_
-║ _${usedPrefix}gay2 *<nombre / @tag>*_
-║ _${usedPrefix}lesbiana *<nombre / @tag>*_
-║ _${usedPrefix}pajero *<nombre / @tag>*_
-║ _${usedPrefix}pajera *<nombre / @tag>*_
-║ _${usedPrefix}puto *<nombre / @tag>*_
-║ _${usedPrefix}puta *<nombre / @tag>*_
-║ _${usedPrefix}manco *<nombre / @tag>*_
-║ _${usedPrefix}manca *<nombre / @tag>*_
-║ _${usedPrefix}rata *<nombre / @tag>*_
-║ _${usedPrefix}love *<nombre / @tag>*_
-║ _${usedPrefix}doxear *<nombre / @tag>*_
-║ _${usedPrefix}pregunta *<texto>*_
-║ _${usedPrefix}suitpvp *<@tag>*_
-║ _${usedPrefix}slot *<apuesta>*_
-║ _${usedPrefix}ttt *<nombre sala>*_
-║ _${usedPrefix}delttt_
-║ _${usedPrefix}acertijo_
-║ _${usedPrefix}simi *<texto>*_
-║ _${usedPrefix}top *<texto>*_
-║ _${usedPrefix}topgays_
-║ _${usedPrefix}topotakus_
-║ _${usedPrefix}formarpareja_
-║ _${usedPrefix}verdad_
-║ _${usedPrefix}reto_
-║ _${usedPrefix}cancion_
-║ _${usedPrefix}pista_
-║ _${usedPrefix}akinator_
-║ _${usedPrefix}wordfind_
+║ ❐ ${usedPrefix}mates *<noob/easy/medium/hard/extreme/impossible/impossible2>*
+║ ❐ ${usedPrefix}fake *<texto1> <@tag> <texto2>*
+║ ❐ ${usedPrefix}ppt *<papel / tijera /piedra>*
+║ ❐ ${usedPrefix}prostituto *<nombre / @tag>*
+║ ❐ ${usedPrefix}prostituta *<nombre / @tag>*
+║ ❐ ${usedPrefix}gay2 *<nombre / @tag>*
+║ ❐ ${usedPrefix}lesbiana *<nombre / @tag>*
+║ ❐ ${usedPrefix}pajero *<nombre / @tag>*
+║ ❐ ${usedPrefix}pajera *<nombre / @tag>*
+║ ❐ ${usedPrefix}puto *<nombre / @tag>*
+║ ❐ ${usedPrefix}puta *<nombre / @tag>*
+║ ❐ ${usedPrefix}manco *<nombre / @tag>*
+║ ❐ ${usedPrefix}manca *<nombre / @tag>*
+║ ❐ ${usedPrefix}rata *<nombre / @tag>*
+║ ❐ ${usedPrefix}love *<nombre / @tag>*
+║ ❐ ${usedPrefix}doxear *<nombre / @tag>*
+║ ❐ ${usedPrefix}pregunta *<texto>*
+║ ❐ ${usedPrefix}suitpvp *<@tag>*
+║ ❐ ${usedPrefix}slot *<apuesta>*
+║ ❐ ${usedPrefix}ttt *<nombre sala>*
+║ ❐ ${usedPrefix}delttt
+║ ❐ ${usedPrefix}acertijo
+║ ❐ ${usedPrefix}simi *<text>*
+║ ❐ ${usedPrefix}top *<text>*
+║ ❐ ${usedPrefix}topgays
+║ ❐ ${usedPrefix}topotakus
+║ ❐ ${usedPrefix}formarpareja
+║ ❐ ${usedPrefix}verdad
+║ ❐ ${usedPrefix}reto
+║ ❐ ${usedPrefix}cancion
+║ ❐ ${usedPrefix}pista
+║ ❐ ${usedPrefix}akinator
+║ ❐ ${usedPrefix}wordfind
 ╚══════════════════════✧
 
 ╔═══════ *⌈ OWNER ⌋* ═══════✧
-║ _${usedPrefix}enable *welcome*_
-║ _${usedPrefix}disable *welcome*_
-║ _${usedPrefix}enable *antilink*_
-║ _${usedPrefix}disable *antilink*_
-║ _${usedPrefix}enable *antilink2*_
-║ _${usedPrefix}disable *antilink2*_
-║ _${usedPrefix}enable *detect*_
-║ _${usedPrefix}disable *detect*_
-║ _${usedPrefix}enable *autosticker*_
-║ _${usedPrefix}disable *autosticker*_
-║ _${usedPrefix}enable *antiviewonce*_
-║ _${usedPrefix}disable *antiviewonce*_
-║ _${usedPrefix}disable *antitoxic*_
-║ _.${usedPrefix}nable *antitraba*_
-║ _${usedPrefix}disable *antitraba*_
-║ _${usedPrefix}enable *antiarabes*_
-║ _${usedPrefix}disable *antiarabes*_
-║ _${usedPrefix}enable *modoadmin*_
-║ _${usedPrefix}disable *modoadmin*_
-║ _${usedPrefix}enable *antidelete*_
-║ _${usedPrefix}disable *antidelete*_
+║ ❐ ${usedPrefix}enable *welcome*
+║ ❐ ${usedPrefix}disable *welcome*
+║ ❐ ${usedPrefix}enable *antilink*
+║ ❐ ${usedPrefix}disable *antilink*
+║ ❐ ${usedPrefix}enable *antilink2*
+║ ❐ ${usedPrefix}disable *antilink2*
+║ ❐ ${usedPrefix}enable *detect*
+║ ❐ ${usedPrefix}disable *detect*
+║ ❐ ${usedPrefix}enable *autosticker*
+║ ❐ ${usedPrefix}disable *autosticker*
+║ ❐ ${usedPrefix}enable *antiviewonce*
+║ ❐ ${usedPrefix}disable *antiviewonce*
+║ ❐ ${usedPrefix}disable *antitoxic*
+║ ❐ ${usedPrefix}nable *antitraba*
+║ ❐ ${usedPrefix}disable *antitraba*
+║ ❐ ${usedPrefix}enable *antiarabes*
+║ ❐ ${usedPrefix}disable *antiarabes*
+║ ❐ ${usedPrefix}enable *modoadmin*
+║ ❐ ${usedPrefix}disable *modoadmin*
+║ ❐ ${usedPrefix}enable *antidelete*
+║ ❐ ${usedPrefix}disable *antidelete*
 ╚══════════════════════✧
 
 ╔═══════ *⌈ REPORT ERROR ⌋* ═══════✧
-║ ${usedPrefix}reporte *<texto>*_
+║ ❐ ${usedPrefix}reporte *<commandnya>*
 ╚══════════════════════✧
 
 ╔═══════ *⌈ DOWNLOADER ⌋* ═══════✧
-║ _${usedPrefix}instagram *<enlace / link / url>*_
-║ _${usedPrefix}mediafire *<enlace / link / url>*_
-║ _${usedPrefix}gitclone *<enlace / link / url>*_
-║ _${usedPrefix}gdrive *<enlace / link / url>*_
-║ _${usedPrefix}tiktok *<enlace / link / url>*_
-║ _${usedPrefix}tiktokimg *<enlace / link / url>*_
-║ _${usedPrefix}twitter *<enlace / link / url>*_
-║ _${usedPrefix}fb *<enlace / link / url>*_
-║ _${usedPrefix}ytshort *<enlace / link / url>*_
-║ _${usedPrefix}ytmp3 *<enlace / link / url>*_
-║ _${usedPrefix}ytmp4 *<enlace / link / url>*_
-║ _${usedPrefix}ytmp3doc *<enlace / link / url>*_
-║ _${usedPrefix}ytmp4doc *<enlace / link / url>*_
-║ _${usedPrefix}videodoc *<enlace / link / url>*_
-║ _${usedPrefix}dapk2 *<enlace / link / url>*_
-║ _${usedPrefix}stickerpack *<enlace / link / url>*_
-║ _${usedPrefix}play *<texto>*_
-║ _${usedPrefix}play2 *<texto>*_
-║ _${usedPrefix}playdoc *<texto>*_
-║ _${usedPrefix}playdoc2 *<texto>*_
-║ _${usedPrefix}playlist *<texto>*_
-║ _${usedPrefix}spotify *<texto>*_
-║ _${usedPrefix}pinterest *<texto>*_
-║ _${usedPrefix}wallpaper *<texto>*_
-║ _${usedPrefix}pptiktok *<nombre de usuario>*_
-║ _${usedPrefix}tiktokstalk *<username>*_
+║ ❐ ${usedPrefix}instagram *<link>*
+║ ❐ ${usedPrefix}mediafire *<link>*
+║ ❐ ${usedPrefix}gitclone *<link>*
+║ ❐ ${usedPrefix}gdrive *<link>*
+║ ❐ ${usedPrefix}tiktok *<link>*
+║ ❐ ${usedPrefix}tiktokimg *<link>*
+║ ❐ ${usedPrefix}twitter *<link>*
+║ ❐ ${usedPrefix}fb *<link>*
+║ ❐ ${usedPrefix}ytshort *<link>*
+║ ❐ ${usedPrefix}ytmp3 *<link>*
+║ ❐ ${usedPrefix}ytmp4 *<link>*
+║ ❐ ${usedPrefix}ytmp3doc *<link>*
+║ ❐ ${usedPrefix}ytmp4doc *<link>*
+║ ❐ ${usedPrefix}videodoc *<link>*
+║ ❐ ${usedPrefix}dapk2 *<link>*
+║ ❐ ${usedPrefix}stickerpack *<link>*
+║ ❐ ${usedPrefix}play *<text>*
+║ ❐ ${usedPrefix}play2 *<text>*
+║ ❐ ${usedPrefix}playdoc *<text>*
+║ ❐ ${usedPrefix}playdoc2 *<text>*
+║ ❐ ${usedPrefix}playlist *<text>*
+║ ❐ ${usedPrefix}spotify *<text>*
+║ ❐ ${usedPrefix}pinterest *<text>*
+║ ❐ ${usedPrefix}wallpaper *<text>*
+║ ❐ ${usedPrefix}pptiktok *<Nama belakang>*
+║ ❐ ${usedPrefix}tiktokstalk *<username>*
 ╚══════════════════════✧
 
 ╔═══════ *⌈ INTERNET ⌋* ═══════✧
