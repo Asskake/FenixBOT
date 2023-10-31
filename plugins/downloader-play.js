@@ -11,7 +11,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `*[𝐼𝑁𝐹𝑂𝑅𝑀𝐴𝐶𝐼𝑂́𝑁] 𝑁𝑂𝑀𝐵𝑅𝐸 𝐷𝐸 𝐿𝐴 𝐶𝐴𝑁𝐶𝐼𝑂𝑁 𝐹𝐴𝐿𝑇𝐴𝑁𝑇𝐸, 𝑃𝑂𝑅 𝐹𝐴𝑉𝑂𝑅 𝐼𝑁𝐺𝑅𝐸𝑆𝐸 𝐸𝐿 𝐶𝑂𝑀𝐴𝑁𝐷𝑂 𝑀𝐴𝑆 𝐸𝐿 𝑁𝑂𝑀𝐵𝑅𝐸 𝑌 𝑇𝐼𝑇𝑈𝐿𝑂 𝐷𝐸 𝑈𝑁𝐴 𝐶𝐴𝑁𝐶𝐼𝑂𝑁*\n\n*۞ 𝐸𝐽𝐸𝑀𝑃𝐿𝑂:*\n*${usedPrefix + command} Good Feeling - Flo Rida*`;
+  if (!text) throw `*[INFO] Nama lagunya hilang, silakan masukkan command nama dan judul lagu*\n\n*Example:*\n*${usedPrefix + command} Good Feeling - Flo Rida*`;
   try {
     const yt_play = await search(args.join(' '));
     let additionalText = '';
@@ -20,26 +20,17 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = 'video 🎥';
     }
-    const texto1 = `*┈┈┈┈『𝑌𝑂𝑈𝑇𝑈𝐵𝐸』┈┈┈┈*\n
- 𖤍 *𝑇𝐼𝑇𝑈𝐿𝑂:* ${yt_play[0].title}
- ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- 𖤍 *𝑃𝑢𝑏𝑙𝑖𝑐𝑎𝑑𝑜:* ${yt_play[0].ago}
- ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- 𖤍 *𝐷𝑢𝑟𝑎𝑐𝑖𝑜𝑛:* ${secondString(yt_play[0].duration.seconds)}
- ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- 𖤍 *𝑉𝑖𝑠𝑡𝑎𝑠:* ${`${MilesNumber(yt_play[0].views)}`}
- ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- 𖤍 *𝐴𝑢𝑡𝑜𝑟:* ${yt_play[0].author.name}
- ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- 𖤍 *𝐶𝑎𝑛𝑎𝑙:* ${yt_play[0].author.url}
- ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
- 𖤍 *𝐼𝐷:* ${yt_play[0].videoId}
- ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- 𖤍 *𝑇𝑖𝑝𝑜:* ${yt_play[0].type}
- ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- 𖤍 *𝐿𝑖𝑛𝑘:* ${yt_play[0].url}\n
- ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
- 𖤍 *_Enviando ${additionalText}, esperé un momento por favor．．．_*`.trim();
+    const texto1 = `『𝑌𝑂𝑈𝑇𝑈𝐵𝐸』\n
+ ❐ *Title:* ${yt_play[0].title}
+ ❐ *Uploaded:* ${yt_play[0].ago}
+ ❐ *Durasi:* ${secondString(yt_play[0].duration.seconds)}
+ ❐ *Dilihat:* ${`${MilesNumber(yt_play[0].views)}`}
+ ❐ *Author:* ${yt_play[0].author.name}
+ ❐ *Channel:* ${yt_play[0].author.url}
+ ❐ *ID:* ${yt_play[0].videoId}
+ ❐ *Tipe:* ${yt_play[0].type}
+ ❐ *Link:* ${yt_play[0].url}\n
+ ❐ *Tolong ${additionalText},Tunggu Sebentar．．．_*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {    
@@ -56,7 +47,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     const fileSizeInMB = fileSizeInKB / 1024;
     const size = fileSizeInMB.toFixed(2);    
     if (size >= limit_a2) {  
-    await conn.sendMessage(m.chat, {text: `*[ ✔ ] Descargue su audio en ${dl_url}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*[ ✔ ] Unduh audio anda di ${dl_url}*`}, {quoted: m});
     return;    
     }     
     if (size >= limit_a1 && size <= limit_a2) {  
@@ -98,7 +89,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     const fileSizeInMB = fileSizeInKB / 1024;
     const size = fileSizeInMB.toFixed(2);    
     if (size >= limit2) {  
-    await conn.sendMessage(m.chat, {text: `*[ ✅ ] 𝐷𝑒𝑠𝑐𝑎𝑟𝑔𝑢𝑒 𝑠𝑢 𝑣𝑖𝑑𝑒𝑜 𝑒𝑛 ${dl_url}*`}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*[ ✅ ] Unduh video anda di ${dl_url}*`}, {quoted: m});
     return;    
     }     
     if (size >= limit1 && size <= limit2) {  
@@ -120,7 +111,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
   }
 } catch (error) {
     console.log(error)
-    throw '*[❌] Error, por favor vuelva a intentarlo.*';
+    throw '*[❌] Kesalahan, silakan coba lagi.*';
   }
 };
 handler.help = ['play', 'play2'].map((v) => v + ' < busqueda >');
