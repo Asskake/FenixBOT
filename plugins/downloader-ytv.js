@@ -5,7 +5,7 @@ import ytdl from 'ytdl-core';
 import axios from 'axios';
 import {bestFormat, getUrlDl} from '../lib/y2dl.js';
 const handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw '*[❗] Uso incorrecto del comando, ingrese un enlace / link de YouTube.*';
+  if (!args[0]) throw '*[❗] Penggunaan perintah yang salah, masukkan tautan / link YouTube.*';
   let enviando;
   if (enviando) return  
       enviando = true    
@@ -22,19 +22,19 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
             youtubeLink = matchingItem.urls[index];
           } else {
             enviando = false  
-            throw `*[❗] No se encontro un enlace para ese numero, por favor ingrese un numero entre el 1 y el ${matchingItem.urls.length}*`;
+            throw `*[❗] Tautan untuk nomor tersebut tidak ditemukan, masukkan nomor antara 1 dan 1. ${matchingItem.urls.length}*`;
           }
         } else {
           enviando = false  
-          throw `*[❗] Para poder hacer uso del comando de esta forma (${usedPrefix + command} <numero>), por favor realiza la busqueda de videos con el comando ${usedPrefix}playlist <texto>*`;
+          throw `*[❗] Untuk dapat menggunakan perintah dengan cara ini (${usedPrefix + command} <number>), silahkan cari video dengan perintah ${usedPrefix}playlist <text>*`;
         }
       } else {
         enviando = false  
-        throw `*[❗] Para poder hacer uso del comando de esta forma (${usedPrefix + command} <numero>), por favor realiza la busqueda de videos con el comando ${usedPrefix}playlist <texto>*`;
+        throw `*[❗] Untuk dapat menggunakan perintah dengan cara ini (${usedPrefix + command} <number>), Silakan cari video dengan perintah ${usedPrefix}playlist <text>*`;
       }
     }
   }
-  const { key } = await m.reply(`*_⏳Sᴇ ᴇsᴛᴀ ᴘʀᴏᴄᴇsᴀɴᴅᴏ Sᴜ ᴠɪᴅᴇᴏ...⏳_*\n\n*◉ Sɪ Sᴜ ᴠɪᴅᴇᴏ ɴᴏ ᴇs ᴇɴᴠɪᴀᴅᴏ, ᴘʀᴜᴇʙᴇ ᴄᴏɴ ᴇʟ ᴄᴏᴍᴀɴᴅᴏ #playdoc ᴏ #play.2 ᴏ #ytmp4doc ◉*`);
+  const { key } = await m.reply(`*_⏳Video Anda Sedang Diproses...⏳_*\n\n*◉ Jika Video Anda tidak terkirim, coba command #playdoc atau #play.2 ᴏ #ytmp4doc ◉*`);
   try {
     const formats = await bestFormat(youtubeLink, 'video');
     const buff = await getBuffer(formats.url);
@@ -45,12 +45,12 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
     const fileSizeInMB = fileSizeInKB / 1024;
     const roundedFileSizeInMB = fileSizeInMB.toFixed(2);
    if (fileSizeInMB > 100) {
-    await conn.sendMessage(m.chat, {document: buff, caption: `*▢ Titulo:* ${ttl_1}\n*▢ Peso Del Video:* ${roundedFileSizeInMB} MB`, fileName: ttl_1 + '.mp4', mimetype: 'video/mp4'}, {quoted: m});
-    await conn.sendMessage(m.chat, {text: `*[ ✔ ] Video descargado y enviado exitosamente.*\n\n*—◉ Se envío en formato de docuemnto debido a que el video pesa ${roundedFileSizeInMB} MB y supera el limite establecido por WhatsApp.*\n*◉ Titulo:* ${ttl_1}`, edit: key}, {quoted: m});
+    await conn.sendMessage(m.chat, {document: buff, caption: `*▢ Title:* ${ttl_1}\n*▢ Size:* ${roundedFileSizeInMB} MB`, fileName: ttl_1 + '.mp4', mimetype: 'video/mp4'}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*[ ✔ ] Video berhasil diunduh dan dikirim.*\n\n*—◉ Dikirim dalam format dokumen karena videonya size ${roundedFileSizeInMB} MB dan melebihi batas yang ditetapkan oleh WhatsApp.*\n*◉ Title:* ${ttl_1}`, edit: key}, {quoted: m});
     enviando = false
    } else {
     await conn.sendMessage(m.chat, {video: buff, caption: `*▢ Titulo:* ${ttl_1}\n*▢ Peso Del Video:* ${roundedFileSizeInMB} MB`, fileName: ttl_1 + '.mp4', mimetype: 'video/mp4'}, {quoted: m});
-    await conn.sendMessage(m.chat, {text: `*[ ✔ ] Video descargado exitosamente.*`, edit: key}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: `*[ ✔ ] Video berhasil diunduh.*`, edit: key}, {quoted: m});
     enviando = false   
    }
  } catch (ee) {
@@ -63,15 +63,15 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
     const dl_url = yt.video[q].download();
     const ttl = yt.title;
     const size = yt.video[q].fileSizeH;
-    await conn.sendMessage(m.chat, {video: {url: dl_url}, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*▢ Titulo:* ${ttl}\n*▢ Peso Del Video:* ${size}`, thumbnail: await fetch(yt.thumbnail)}, {quoted: m});
-    await conn.sendMessage(m.chat, {text: '*[ ✔ ] Video descargado exitosamente.*', edit: key}, {quoted: m});
+    await conn.sendMessage(m.chat, {video: {url: dl_url}, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: `*▢ Title:* ${ttl}\n*▢ size:* ${size}`, thumbnail: await fetch(yt.thumbnail)}, {quoted: m});
+    await conn.sendMessage(m.chat, {text: '*[ ✔ ] Video berhasil diunduh.*', edit: key}, {quoted: m});
     enviando = false
   } catch (ee2) {
     console.log(ee2)
     try {
       const mediaa = await ytMp4(youtubeLink);
-      await conn.sendMessage(m.chat, {video: {url: mediaa.result}, fileName: `error.mp4`, caption: `_𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭_`, thumbnail: mediaa.thumb, mimetype: 'video/mp4'}, {quoted: m});
-      await conn.sendMessage(m.chat, {text: '*[ ✔ ] Video descargado exitosamente.*', edit: key}, {quoted: m});
+      await conn.sendMessage(m.chat, {video: {url: mediaa.result}, fileName: `error.mp4`, caption: `Clara - AI`, thumbnail: mediaa.thumb, mimetype: 'video/mp4'}, {quoted: m});
+      await conn.sendMessage(m.chat, {text: '*[ ✔ ] Video berhasil diunduh.*', edit: key}, {quoted: m});
       enviando = false
     } catch {
       try {
@@ -81,12 +81,12 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
         const n2 = lolh.result.link;
         const n3 = lolh.result.size;
         const n4 = lolh.result.thumbnail;
-        await conn.sendMessage(m.chat, {video: {url: n2}, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `*▢ Titulo:* ${n}\n*▢ Peso Del Video:* ${n3}`, thumbnail: await fetch(n4)}, {quoted: m});
-        await conn.sendMessage(m.chat, {text: '*[ ✔ ] Video descargado exitosamente.*', edit: key}, {quoted: m});
+        await conn.sendMessage(m.chat, {video: {url: n2}, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: `*▢ Title:* ${n}\n*▢ Size:* ${n3}`, thumbnail: await fetch(n4)}, {quoted: m});
+        await conn.sendMessage(m.chat, {text: '*[ ✔ ] Video berhasil diunduh.*', edit: key}, {quoted: m});
         enviando = false
       } catch {
-        await conn.sendMessage(m.chat, {text: `*[ ❌ ] El video no pudo ser descargado ni enviado, vuelva a intentarlo.*`, edit: key}, {quoted: m});
-        throw '*[❗] Error, no fue posible descargar el video.*';
+        await conn.sendMessage(m.chat, {text: `*[ ❌ ] Video tidak dapat diunduh atau dikirim, coba lagi.*`, edit: key}, {quoted: m});
+        throw '*[❗] Error, tidak dapat mendownload videonya.*';
       }
     }
   }
