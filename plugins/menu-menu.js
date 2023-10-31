@@ -93,7 +93,7 @@ await conn.sendMessage(m.chat, {text: `Complete!`, edit: key})
 ║ ❐ ${usedPrefix}rata *<nama / @tag>*
 ║ ❐ ${usedPrefix}love *<nama / @tag>*
 ║ ❐ ${usedPrefix}doxear *<nama / @tag>*
-║ ❐ ${usedPrefix}pregunta *<text>*
+║ ❐ ${usedPrefix}apakah *<text>*
 ║ ❐ ${usedPrefix}suitpvp *<@tag>*
 ║ ❐ ${usedPrefix}slot *<jumlah>*
 ║ ❐ ${usedPrefix}ttt *<nama ruangan>*
