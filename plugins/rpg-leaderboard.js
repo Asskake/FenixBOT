@@ -10,31 +10,31 @@ const handler = async (m, {conn, args, participants}) => {
   const usersLevel = sortedLevel.map(enumGetKey);
   const len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 10)) : Math.min(10, sortedExp.length);
   const adventurePhrases = [
-  "Lidera la aventura y forja tu camino hacia la cima.",
-  "¡Desafía lo desconocido y alcanza nuevas alturas!",
-  "Tu valentía te guiará a la cima de la tabla de clasificación.",
-  "En cada paso, esculpe tu leyenda en esta gran aventura.",
-  "Explora, compite y demuestra tu grandeza en esta tabla.",
-  "Cada paso cuenta en tu viaje hacia la cima del ranking.",
-  "La emoción de la competencia te impulsa hacia adelante.",
-  "Aventúrate y conquista los primeros lugares con determinación.",
+  "Pimpin petualangan dan teruskan jalan Anda menuju puncak.",
+  "Tantang hal yang tidak diketahui dan raih ketinggian baru!",
+  "Keberanian Anda akan memandu Anda ke puncak papan peringkat.",
+  "Di setiap langkah, pahat legenda Anda dalam petualangan hebat ini.",
+  "Jelajahi, berkompetisi, dan buktikan kehebatan Anda di forum ini.",
+  "Setiap langkah diperhitungkan dalam perjalanan Anda menuju peringkat teratas.",
+  "Sensasi persaingan mendorong Anda maju.",
+  "Berusahalah dan taklukkan tempat pertama dengan tekad.",
 ];
   const randomAdventurePhrase = adventurePhrases[Math.floor(Math.random() * adventurePhrases.length)];
   const texto = `
-*< TABLA DE LOS AVENTUREROS MÁS DESTACADOS />*
+*< TABEL PETUALANGAN PALING LUAR BIASA />*
     
 —◉ *TOP ${len} EXP 🌟*
-*👤 Tú posición:* ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length}
+*👤 Posisi kamu:* ${usersExp.indexOf(m.sender) + 1} de ${usersExp.length}
 
 ${sortedExp.slice(0, len).map(({jid, exp}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${exp} exp*`).join`\n`}
 
-—◉ *TOP ${len} DIAMANTES 💎*
-*👤 Tú posición:* ${usersLim.indexOf(m.sender) + 1} de ${usersLim.length}
+—◉ *TOP ${len} LIMIT 💎*
+*👤 Posisi kamu:* ${usersLim.indexOf(m.sender) + 1} de ${usersLim.length}
 
 ${sortedLim.slice(0, len).map(({jid, limit}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *${limit} diamantes*`).join`\n`}
 
-—◉ *TOP ${len} NIVEL 🎚️*
-*👤 Tú posición:* ${usersLevel.indexOf(m.sender) + 1} de ${usersLevel.length}
+—◉ *TOP ${len} LEVEL 🎚️*
+*👤 Posisi kamu:* ${usersLevel.indexOf(m.sender) + 1} de ${usersLevel.length}
 
 ${sortedLevel.slice(0, len).map(({jid, level}, i) => `${i + 1}. ${participants.some((p) => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : '@'}${jid.split`@`[0]} *nivel ${level}*`).join`\n`}
 
