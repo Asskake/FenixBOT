@@ -44,7 +44,7 @@ await conn.sendMessage(m.chat, {text: `Complete!`, edit: key})
 ║ ❐ *ᴜꜱᴇʀ:* ${rtotal}
 ╚══════════════════════✧
 
-╔═══════ *⌈ USER ⌋* ═══════✧
+╔═══════ *⌈ INFO USER ⌋* ═══════✧
 ║ ʟᴇᴠᴇʟ : ${level}
 ║ ᴇxᴘ : ${exp}
 ║ ʀᴏʟᴇ : ${role}
@@ -76,27 +76,27 @@ await conn.sendMessage(m.chat, {text: `Complete!`, edit: key})
 ║ ❐ ${usedPrefix}bots
 ╚══════════════════════✧
 
-╔═══════ *⌈ USER ⌋* ═══════✧
+╔═══════ *⌈ FUN ⌋* ═══════✧
 ║ ❐ ${usedPrefix}mates *<noob/easy/medium/hard/extreme/impossible/impossible2>*
 ║ ❐ ${usedPrefix}fake *<texto1> <@tag> <texto2>*
-║ ❐ ${usedPrefix}ppt *<papel / tijera /piedra>*
-║ ❐ ${usedPrefix}prostituto *<nombre / @tag>*
-║ ❐ ${usedPrefix}prostituta *<nombre / @tag>*
-║ ❐ ${usedPrefix}gay2 *<nombre / @tag>*
-║ ❐ ${usedPrefix}lesbiana *<nombre / @tag>*
-║ ❐ ${usedPrefix}pajero *<nombre / @tag>*
-║ ❐ ${usedPrefix}pajera *<nombre / @tag>*
-║ ❐ ${usedPrefix}puto *<nombre / @tag>*
-║ ❐ ${usedPrefix}puta *<nombre / @tag>*
-║ ❐ ${usedPrefix}manco *<nombre / @tag>*
-║ ❐ ${usedPrefix}manca *<nombre / @tag>*
-║ ❐ ${usedPrefix}rata *<nombre / @tag>*
-║ ❐ ${usedPrefix}love *<nombre / @tag>*
-║ ❐ ${usedPrefix}doxear *<nombre / @tag>*
-║ ❐ ${usedPrefix}pregunta *<texto>*
+║ ❐ ${usedPrefix}ppt *<kertas/gunting/batu>*
+║ ❐ ${usedPrefix}prostituto *<nama / @tag>*
+║ ❐ ${usedPrefix}prostituta *<nama / @tag>*
+║ ❐ ${usedPrefix}gay2 *<nama / @tag>*
+║ ❐ ${usedPrefix}lesbiana *<nama / @tag>*
+║ ❐ ${usedPrefix}pajero *<nama / @tag>*
+║ ❐ ${usedPrefix}pajera *<nama / @tag>*
+║ ❐ ${usedPrefix}puto *<nama / @tag>*
+║ ❐ ${usedPrefix}puta *<nama / @tag>*
+║ ❐ ${usedPrefix}manco *<nama / @tag>*
+║ ❐ ${usedPrefix}manca *<nama / @tag>*
+║ ❐ ${usedPrefix}rata *<nama / @tag>*
+║ ❐ ${usedPrefix}love *<nama / @tag>*
+║ ❐ ${usedPrefix}doxear *<nama / @tag>*
+║ ❐ ${usedPrefix}pregunta *<text>*
 ║ ❐ ${usedPrefix}suitpvp *<@tag>*
-║ ❐ ${usedPrefix}slot *<apuesta>*
-║ ❐ ${usedPrefix}ttt *<nombre sala>*
+║ ❐ ${usedPrefix}slot *<jumlah>*
+║ ❐ ${usedPrefix}ttt *<nama ruangan>*
 ║ ❐ ${usedPrefix}delttt
 ║ ❐ ${usedPrefix}acertijo
 ║ ❐ ${usedPrefix}simi *<text>*
