@@ -2,19 +2,19 @@
 
 const handler = async (m, {args, usedPrefix, command}) => {
   const fa = `
-*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙰 𝙻𝙰 𝙲𝙰𝙽𝚃𝙸𝙳𝙰𝙳 𝚀𝚄𝙴 𝙳𝙴𝚂𝙴𝙰 𝙰𝙿𝙾𝚂𝚃𝙰𝚁* 
+*[❗] MASUKAN JUMLAH YANG INGIN ANDA PERTARUHKAN
 
-*📌 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*
+*Example:*
 *${usedPrefix + command} 100*`.trim();
   if (!args[0]) throw fa;
   if (isNaN(args[0])) throw fa;
   const apuesta = parseInt(args[0]);
   const users = global.db.data.users[m.sender];
   const time = users.lastslot + 10000;
-  if (new Date - users.lastslot < 10000) throw `*⏳ 𝙴𝚂𝙿𝙴𝚁𝙴 ${msToTime(time - new Date())} 𝙿𝙰𝚁𝙰 𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙰𝙿𝙾𝚂𝚃𝙰𝚁*`;
-  if (apuesta < 100) throw '*[❗] 𝙴𝙻 𝙼𝙸𝙽𝙸𝙼𝙾 𝙿𝙰𝚁𝙰 𝙰𝙿𝙾𝚂𝚃𝙰𝚁 𝙴𝚂 𝙳𝙴 𝟷00 𝚇𝙿*';
+  if (new Date - users.lastslot < 10000) throw `*⏳ Tunggu ${msToTime(time - new Date())} UNTUK BERTARUH LAGI*`;
+  if (apuesta < 100) throw '*[❗] MINIMUM UNTUK BERTARUH ADALAH 100 XP*';
   if (users.exp < apuesta) {
-    throw `*[❗] 𝚃𝚄 𝚇𝙿 𝙽𝙾 𝙴𝚂 𝚂𝚄𝙵𝙸𝙲𝙸𝙴𝙽𝚃𝙴 𝙿𝙰𝚁𝙰 𝙰𝙿𝙾𝚂𝚃𝙰𝚁 𝙴𝚂𝙰 𝙲𝙰𝙽𝚃𝙸𝙳𝙰𝙳, 𝙹𝚄𝙴𝙶𝙰 𝙾𝚃𝚁𝙾𝚂 𝙹𝚄𝙴𝙶𝙾𝚂 𝙾 𝙸𝙽𝚃𝙴𝚁𝙰𝙲𝚃𝚄𝙰 𝙲𝙾𝙽 𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝙶𝙰𝙽𝙰𝚁 𝙼𝙰𝚂 𝚇𝙿*`;
+    throw `*[❗] XP ANDA TIDAK CUKUP UNTUK BERTARUH JUMLAH TERSEBUT, MAINKAN GAME LAIN ATAU BERINTERAKSI DENGAN BOT UNTUK MENDAPATKAN LEBIH BANYAK XP*`;
   }
   const emojis = ['🐋', '🐉', '🕊️'];
   let a = Math.floor(Math.random() * emojis.length);
@@ -40,13 +40,13 @@ const handler = async (m, {args, usedPrefix, command}) => {
   }
   let end;
   if (a == b && b == c) {
-    end = `*𝙶𝙰𝙽𝙰𝚂𝚃𝙴! 🎁 +${apuesta + apuesta} 𝚇𝙿*`;
+    end = `*MENANG! 🎁 +${apuesta + apuesta} 𝚇𝙿*`;
     users.exp += apuesta;
   } else if (a == b || a == c || b == c) {
-    end = `*🔮 𝙲𝙰𝚂𝙸 𝙻𝙾 𝙻𝙾𝙶𝚁𝙰𝚂!, 𝚂𝙸𝙶𝚄𝙴 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝙽𝙳𝙾*\n*𝚃𝙾𝙼𝙰 +10 XP*`;
+    end = `*🔮 KAMU HAMPIR SELESAI!, TERUS MENCOBA*\n*MENGAMBIL +10 XP*`;
     users.exp += 10;
   } else {
-    end = `*❌ 𝙿𝙴𝚁𝙳𝙸𝚂𝚃𝙴 -${apuesta} 𝚇𝙿*`;
+    end = `*❌ KAMU KALAH -${apuesta} 𝚇𝙿*`;
     users.exp -= apuesta;
   }
   users.lastslot = new Date * 1;
