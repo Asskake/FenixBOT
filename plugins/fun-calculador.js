@@ -7,93 +7,93 @@ const handler = async (m, { conn, command, text, usedPrefix }) => {
     case 'gay2':
       emoji = '🏳️‍🌈';
       if (percentages < 50) {
-        description = `*Los calculos han arrojado que ${text.toUpperCase()} es ${percentages}% Gay. ${emoji}*\n*-❥ Eso es bajo... ¡Tu eres Joto, no Gay! 😄*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% Gay. ${emoji}*\n*-❥ Itu rendah... Kamu bukan Gay! 😄*`;
       } else if (percentages > 100) {
-        description = `*Los calculos han arrojado que ${text.toUpperCase()} es ${percentages}% Gay. ${emoji}*\n*-❥ ¡Incluso más gay de lo que pensábamos! 💃*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% Gay. ${emoji}*\n*-❥ Bahkan lebih gay dari yang kita duga! 💃*`;
       } else {
-        description = `*Los calculos han arrojado que ${text.toUpperCase()} es ${percentages}% Gay. ${emoji}*\n*-❥ Lo tuyo, lo tuyo es que eres Gay. ☠*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% Gay. ${emoji}*\n*-❥ Kamu!, Kamu!, Fakta bahwa kamu adalah gay sejati!*`;
       }
       break;
-    case 'lesbiana':
+    case 'lesbi':
       emoji = '🏳️‍🌈';
       if (percentages < 50) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Quizás necesites más películas románticas en tu vida. 🎬*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Mungkin Anda membutuhkan lebih banyak film romantis dalam hidup Anda. 🎬*`;
       } else if (percentages > 100) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ ¡Eso es un amor extremo por las chicas! 👩‍❤️‍👩*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Itu cinta yang ekstrim untuk perempuan! 👩‍❤️‍👩*`;
       } else {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Mantén el amor floreciendo! 🌸*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Jagalah agar cinta tetap mekar! 🌸*`;
       }
       break;
     case 'pajero':
     case 'pajera':
       emoji = '😏💦';
       if (percentages < 50) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Tal vez necesites más hobbies! 🎨*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Mungkin Anda membutuhkan lebih banyak hobi! 🎨*`;
       } else if (percentages > 100) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Eso es una resistencia admirable! 💪*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Itu adalah perlawanan yang mengagumkan! 💪*`;
       } else {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Mantén el buen trabajo (en solitario). 🙌*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Pertahankan kerja bagus (solo). 🙌*`;
       }
       break;
-    case 'puto':
-    case 'puta':
+    case 'sialan':
+    case 'jalang':
       emoji = '🔥🥵';
       if (percentages < 50) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ ¡Más suerte en tu próxima conquista! 💔*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Semoga beruntung dalam penaklukan Anda berikutnya! 💔*`;
       } else if (percentages > 100) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ ¡Estás en llamas! 🚒*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Anda bersemangat! 🚒*`;
       } else {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Mantén ese encanto ardiente! 🔥*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Pertahankan pesona berapi-api itu! 🔥*`;
       }
       break;
-    case 'manco':
+    case 'bertangansatu':
     case 'manca':
       emoji = '💩';
       if (percentages < 50) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ ¡No eres el único en ese club! 😅*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Anda bukan satu-satunya di klub itu! 😅*`;
       } else if (percentages > 100) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ ¡Tienes un talento muy especial! 🙈*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Anda memiliki bakat yang sangat istimewa! 🙈*`;
       } else {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Mantén esa actitud valiente! 🤙*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Pertahankan sikap berani itu! 🤙*`;
       }
       break;
-    case 'rata':
+    case 'tikus':
       emoji = '🐁';
       if (percentages < 50) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Nada de malo en disfrutar del queso! 🧀*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Tak ada salahnya menikmati keju! 🧀*`;
       } else if (percentages > 100) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Un auténtico ratón de lujo! 🏰*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Tikus yang benar-benar mewah! 🏰*`;
       } else {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Come queso con responsabilidad! 🧀*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Makan keju secara bertanggung jawab! 🧀*`;
       }
       break;
-    case 'prostituto':
-    case 'prostituta':
+    case 'pelacur':
+    case 'lacur':
       emoji = '🫦👅';
       if (percentages < 50) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ El mercado está en auge! 💼*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Pasar sedang booming! 💼*`;
       } else if (percentages > 100) {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Un/a verdadero/a profesional! 💰*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Seorang profesional sejati! 💰*`;
       } else {
-        description = `*Los cálculos han arrojado que ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Siempre es hora de negocios! 💼*`;
+        description = `*Perhitungan telah menunjukkan hal itu ${text.toUpperCase()} es ${percentages}% ${command}. ${emoji}*\n*-❥ Ini selalu waktu bisnis! 💼*`;
       }
       break;
       default:
-      throw `*[❗] Comando no válido.*`;
+      throw `*Command Tidak Valid!.*`;
   }
   const responses = [
-    "El universo ha hablado.",
-    "Los científicos lo confirman.",
-    "¡Sorpresa! 🎉"
+    "Alam semesta telah berbicara.",
+    "Para ilmuwan mengkonfirmasi hal itu."
+    "Kejutan! 🎉"
   ];
   const response = responses[Math.floor(Math.random() * responses.length)];
-  const cal = `━━━━⬣ *CALCULADOR* ⬣━━━━
+  const cal = `『 *MENGHITUNG* 』
 
 —◉ ${description}
 
 *"${response}"*
 
-━━━━⬣ *CALCULADOR* ⬣━━━━`.trim()  
+『 *MENGHITUNG* 』`.trim()  
   async function loading() {
 var hawemod = [
 "《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
@@ -102,7 +102,7 @@ var hawemod = [
 "《 ██████████▒▒》80%",
 "《 ████████████》100%"
 ]
-   let { key } = await conn.sendMessage(m.chat, {text: `*🔄 ¡Calculando Porcentaje! 🔄*`, mentions: conn.parseMention(cal)}, {quoted: m})
+   let { key } = await conn.sendMessage(m.chat, {text: `*Menghitung Persentase!*`, mentions: conn.parseMention(cal)}, {quoted: m})
  for (let i = 0; i < hawemod.length; i++) {
    await new Promise(resolve => setTimeout(resolve, 1000)); 
    await conn.sendMessage(m.chat, {text: hawemod[i], edit: key, mentions: conn.parseMention(cal)}, {quoted: m}); 
@@ -113,5 +113,5 @@ loading()
 };
 handler.help = ['gay2', 'lesbiana', 'pajero', 'pajera', 'puto', 'puta', 'manco', 'manca', 'rata', 'prostituta', 'prostituto'].map((v) => v + ' @tag | nombre');
 handler.tags = ['calculator'];
-handler.command = /^(gay2|lesbiana|pajero|pajera|puto|puta|manco|manca|rata|prostituta|prostituto)$/i;
+handler.command = /^(gay2|lesbi|pajero|pajera|sialan|jalang|bertangansatu|manca|tikus|pelacur|lacur)$/i;
 export default handler;
