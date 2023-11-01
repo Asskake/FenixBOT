@@ -1,5 +1,5 @@
 const handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `*[❗] Debes mencionar a alguien para el cálculo*`;
+  if (!text) throw `*Anda harus menyebutkan seseorang untuk perhitungannya*`;
   const percentages = (500).getRandom();
   let emoji = '';
   let description = '';
