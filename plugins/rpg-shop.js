@@ -7,11 +7,11 @@ const handler = async (m, {conn, command, args}) => {
     global.db.data.users[m.sender].exp -= xpperlimit * count;
     global.db.data.users[m.sender].limit += count;
     conn.reply(m.chat, `
-┌─「 *NOTA DE PAGO* 」
-‣ *Compra nominal* : + ${count}💎 
-‣ *Gastado* : -${xpperlimit * count} XP
+┌─「 *CATATAN PEMBAYARAN* 」
+‣ *Nominal pembelian* : + ${count}💎 
+‣ *Dihabiskan* : -${xpperlimit * count} XP
 └──────────────`, m);
-  } else conn.reply(m.chat, `❎ Lo siento, no tienes suficientes *XP* para comprar *${count}* Diamantes💎`, m);
+  } else conn.reply(m.chat, `❎ Maaf, Anda tidak memiliki cukup *XP* untuk membeli *${count}* Diamond💎`, m);
 };
 handler.help = ['Buy', 'Buyall'];
 handler.tags = ['xp'];
