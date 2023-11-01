@@ -2,8 +2,8 @@ import uploadImage from '../lib/uploadImage.js';
 const handler = async (m, {conn, text, args, usedPrefix, command}) => {
   const q = m.quoted ? m.quoted : m;
   const mime = (q.msg || q).mimetype || q.mediaType || '';
-  if (!/image/g.test(mime)) throw '*[❗] Balas atau Kirim sebuah gambar*';
-  m.reply('*[❗] Mengkonversi gambar ke desain anime, bersabarlah saya akan mengirimkan hasilnya*');
+  if (!/image/g.test(mime)) throw '*Balas atau Kirim sebuah gambar*';
+  m.reply('*Mengkonversi gambar ke desain anime, bersabarlah saya akan mengirimkan hasilnya*');
   const data = await q.download?.();
   const image = await uploadImage(data);
   try {
