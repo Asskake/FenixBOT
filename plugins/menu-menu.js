@@ -168,99 +168,99 @@ await conn.sendMessage(m.chat, {text: `Complete!`, edit: key})
 ╚══════════════════════✧
 
 ╔═══════ *⌈ INTERNET ⌋* ═══════✧
-║ _${usedPrefix}githubsearch *<texto>*_
-║ _${usedPrefix}pelisplus *<texto>*_
-║ _${usedPrefix}modapk *<texto>*_
-║ _${usedPrefix}stickersearch *<texto>*_
-║ _${usedPrefix}stickersearch2 *<texto>*_
-║ _${usedPrefix}animeinfo *<texto>*_
-║ _${usedPrefix}google *<texto>*_
-║ _${usedPrefix}letra *<texto>*_
-║ _${usedPrefix}wikipedia *<texto>*_
-║ _${usedPrefix}ytsearch *<texto>*_
-║ _${usedPrefix}playstore *<texto>*_
+║ ❐ ${usedPrefix}githubsearch *<text>*
+║ ❐ ${usedPrefix}pelisplus *<text>*
+║ ❐ ${usedPrefix}modapk *<text>*
+║ ❐ ${usedPrefix}stickersearch *<text>*
+║ ❐ ${usedPrefix}stickersearch2 *<text>*
+║ ❐ ${usedPrefix}animeinfo *<text>*
+║ ❐ ${usedPrefix}google *<text>*
+║ ❐ ${usedPrefix}letra *<text>*
+║ ❐ ${usedPrefix}wikipedia *<text>*
+║ ❐ ${usedPrefix}ytsearch *<text>*
+║ ❐ ${usedPrefix}playstore *<text>*
 ╚══════════════════════✧
 
 ╔═══════ *⌈ GROUP ⌋* ═══════✧
-║ _${usedPrefix}kick *<@tag>*_
-║ _${usedPrefix}kick2 *<@tag>*_
-║ _${usedPrefix}listanum *<texto>*_
-║ _${usedPrefix}kicknum *<texto>*_
-║ _${usedPrefix}grupo *<abrir / cerrar>*_
-║ _${usedPrefix}grouptime *<opcion> <tiempo>*_
-║ _${usedPrefix}promote *<@tag>*_
-║ _${usedPrefix}demote *<@tag>*_
-║ _${usedPrefix}admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
-║ _${usedPrefix}demote *<@tag>*_
-║ _${usedPrefix}infogroup_
-║ _${usedPrefix}resetlink_
-║ _${usedPrefix}link_
-║ _${usedPrefix}setname *<texto>*_
-║ _${usedPrefix}setdesc *<texto>*_
-║ _${usedPrefix}invocar *<texto>*_
-║ _${usedPrefix}hidetag *<texto>*_
-║ _${usedPrefix}warn *<@tag>*_
-║ _${usedPrefix}unwarn *<@tag>*_
-║ _${usedPrefix}listwarn_
-║ _${usedPrefix}fantasmas_
-║ _${usedPrefix}destraba_
-║ _${usedPrefix}setpp *<imagen>*_
+║ ❐ ${usedPrefix}kick *<@tag>*
+║ ❐ ${usedPrefix}kick2 *<@tag>*
+║ ❐ ${usedPrefix}listanum *<text>*
+║ ❐ ${usedPrefix}kicknum *<text>*
+║ ❐ ${usedPrefix}grupo *<abrir / cerrar>*
+║ ❐ ${usedPrefix}grouptime *<pilihan> <waktu>*
+║ ❐ ${usedPrefix}promote *<@tag>*
+║ ❐ ${usedPrefix}demote *<@tag>*
+║ ❐ ${usedPrefix}admins *<text>* (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+║ ❐ ${usedPrefix}demote *<@tag>*
+║ ❐ ${usedPrefix}infogroup
+║ ❐ ${usedPrefix}resetlink
+║ ❐ ${usedPrefix}link
+║ ❐ ${usedPrefix}setname *<text>*
+║ ❐ ${usedPrefix}setdesc *<text>*
+║ ❐ ${usedPrefix}invocar *<text>*
+║ ❐ ${usedPrefix}hidetag *<text>*
+║ ❐ ${usedPrefix}warn *<@tag>*
+║ ❐ ${usedPrefix}unwarn *<@tag>*
+║ ❐ ${usedPrefix}listwarn
+║ ❐ ${usedPrefix}fantasmas
+║ ❐ ${usedPrefix}destraba
+║ ❐ ${usedPrefix}setpp *<image>*
 ╚══════════════════════✧
 
 ╔═══════ *⌈ CONVERT ⌋* ═══════✧
-║ _${usedPrefix}toanime *<imagen>*_
-║ _${usedPrefix}togifaud *<video>*_
-║ _${usedPrefix}toimg *<sticker>*_
-║ _${usedPrefix}tomp3 *<video>*_
-║ _${usedPrefix}tomp3 *<nota de voz>*_
-║ _${usedPrefix}toptt *<video / audio>*_
-║ _${usedPrefix}tovideo *<sticker>*_
-║ _${usedPrefix}tourl *<video / imagen / audio>*_
-║ _${usedPrefix}tts *<idioma> <texto>*_
-║ _${usedPrefix}tts *<efecto> <texto>*_
+║ ❐ ${usedPrefix}toanime *<image>*
+║ ❐ ${usedPrefix}togifaud *<video>*
+║ ❐ ${usedPrefix}toimg *<sticker>*
+║ ❐ ${usedPrefix}tomp3 *<video>*
+║ ❐ ${usedPrefix}tomp3 *<vn>*
+║ ❐ ${usedPrefix}toptt *<video / audio>*
+║ ❐ ${usedPrefix}tovideo *<sticker>*
+║ ❐ ${usedPrefix}tourl *<video / image / audio>*
+║ ❐ ${usedPrefix}tts *<bahasa> <text>*
+║ ❐ ${usedPrefix}tts *<efek> <text>*
 ╚══════════════════════✧
 
 ╔═══════ *⌈ RANDOM ⌋* ═══════✧
-║ _${usedPrefix}pujian_
-║ _${usedPrefix}nasihat_
-║ _${usedPrefix}ungkapanromantis_
-║ _${usedPrefix}sejarahromantis_
+║ ❐ ${usedPrefix}pujian
+║ ❐ ${usedPrefix}nasihat
+║ ❐ ${usedPrefix}ungkapanromantis
+║ ❐ ${usedPrefix}sejarahromantis
 ╚══════════════════════✧
 
 ╔═══════ *⌈ ANIME ⌋* ═══════✧
-║ _${usedPrefix}menuanimes_
+║ ❐ ${usedPrefix}menuanimes
 ╚══════════════════════✧
 
 ╔═══════ *⌈ RANDOM ⌋* ═══════✧
-║ _${usedPrefix}kpop *<blackpink _
-║ _${usedPrefix}cat_
-║ _${usedPrefix}dog_
-║ _${usedPrefix}meme_
-║ _${usedPrefix}itzy_
-║ _${usedPrefix}blackpink_
-║ _${usedPrefix}navidad_
-║ _${usedPrefix}wpmontaña_
-║ _${usedPrefix}pubg_
-║ _${usedPrefix}wpgaming_
-║ _${usedPrefix}wpaesthetic_
-║ _${usedPrefix}wpaesthetic2_
-║ _${usedPrefix}wprandom_
-║ _${usedPrefix}wallhp_
-║ _${usedPrefix}wpvehiculo_
-║ _${usedPrefix}wpmoto_
-║ _${usedPrefix}coffee_
-║ _${usedPrefix}pentol_
-║ _${usedPrefix}caricatura_
-║ _${usedPrefix}ciberespacio_
-║ _${usedPrefix}technology_
-║ _${usedPrefix}doraemon_
-║ _${usedPrefix}hacker_
-║ _${usedPrefix}planeta_
-║ _${usedPrefix}randomprofile_
+║ ❐ ${usedPrefix}kpop *<blackpink>
+║ ❐ ${usedPrefix}cat
+║ ❐ ${usedPrefix}dog
+║ ❐ ${usedPrefix}meme
+║ ❐ ${usedPrefix}itzy
+║ ❐ ${usedPrefix}blackpink
+║ ❐ ${usedPrefix}navidad
+║ ❐ ${usedPrefix}wpmontaña
+║ ❐ ${usedPrefix}pubg
+║ ❐ ${usedPrefix}wpgaming
+║ ❐ ${usedPrefix}wpaesthetic
+║ ❐ ${usedPrefix}wpaesthetic2
+║ ❐ ${usedPrefix}wprandom
+║ ❐ ${usedPrefix}wallhp
+║ ❐ ${usedPrefix}wpvehiculo
+║ ❐ ${usedPrefix}wpmoto
+║ ❐ ${usedPrefix}coffee
+║ ❐ ${usedPrefix}pentol
+║ ❐ ${usedPrefix}caricatura
+║ ❐ ${usedPrefix}ciberespacio
+║ ❐ ${usedPrefix}technology
+║ ❐ ${usedPrefix}doraemon
+║ ❐ ${usedPrefix}hacker
+║ ❐ ${usedPrefix}planeta
+║ ❐ ${usedPrefix}randomprofile
 ╚══════════════════════✧
 
 ╔═══════ *⌈ JANGAN PAKAI! ⌋* ═══════✧
-║ _${usedPrefix}Alkitab_
+║ ❐ ${usedPrefix}Alkitab
 ╚══════════════════════✧
 
 ╔═══════ *⌈ SUARA ⌋* ═══════✧
@@ -385,7 +385,7 @@ await conn.sendMessage(m.chat, {text: `Complete!`, edit: key})
 ║ _${usedPrefix}banuser *<@tag>*_
 ║ _${usedPrefix}unbanuser *_@tag_*
 ║ _${usedPrefix}dardiamantes *<@tag>*_
-║ _${usedPrefix}añadirxp *<@tag> 
+║ _${usedPrefix}añadirxp *<@tag>_
 ║ _${usedPrefix}banuser *<@tag>*_
 ║ _${usedPrefix}bc *<texto>*_
 ║ _${usedPrefix}bcchats *<texto>*_
@@ -398,17 +398,17 @@ await conn.sendMessage(m.chat, {text: `Complete!`, edit: key})
 ║ _${usedPrefix}restart_
 ║ _${usedPrefix}update_
 ║ _${usedPrefix}banlist_
-║ _${usedPrefix}addprem *<@tag> 
+║ _${usedPrefix}addprem *<@tag>_
 ║ _${usedPrefix}addprem2 *<@tag>*_
 ║ _${usedPrefix}addprem3 *<@tag>*_
 ║ _${usedPrefix}addprem4 *<@tag>*_
 ║ _${usedPrefix}delprem *<@tag>*_
 ║ _${usedPrefix}listcmd_
 ║ _*${usedPrefix}setppbot*_
-║ _${usedPrefix}addcmd *<texto> 
-║ _${usedPrefix}delcmd
-║ _${usedPrefix}saveimage
-║ _${usedPrefix}viewimage
+║ _${usedPrefix}addcmd *<texto>_ 
+║ _${usedPrefix}delcmd_
+║ _${usedPrefix}saveimage_
+║ _${usedPrefix}viewimage_
 ╚══════════════════════✧`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
