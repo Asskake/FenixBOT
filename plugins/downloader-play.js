@@ -11,7 +11,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `*[INFO] Nama lagunya hilang, silakan masukkan command nama dan judul lagu*\n\n*Example:*\n*${usedPrefix + command} Good Feeling - Flo Rida*`;
+  if (!text) throw `*Nama lagunya hilang, silakan masukkan command nama dan judul lagu*\n\n*Example:*\n*${usedPrefix + command} Good Feeling - Flo Rida*`;
   try {
     const yt_play = await search(args.join(' '));
     let additionalText = '';
@@ -20,7 +20,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = 'video 🎥';
     }
-    const texto1 = `『𝑌𝑂𝑈𝑇𝑈𝐵𝐸』\n
+    const texto1 = `
  ❐ *Title:* ${yt_play[0].title}
  ❐ *Uploaded:* ${yt_play[0].ago}
  ❐ *Durasi:* ${secondString(yt_play[0].duration.seconds)}
@@ -30,7 +30,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
  ❐ *ID:* ${yt_play[0].videoId}
  ❐ *Tipe:* ${yt_play[0].type}
  ❐ *Link:* ${yt_play[0].url}\n
- ❐ *Tolong ${additionalText},Tunggu Sebentar．．．_*`.trim();
+ *Tolong ${additionalText},Tunggu Sebentar．．．_*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {    
@@ -111,7 +111,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
   }
 } catch (error) {
     console.log(error)
-    throw '*[❌] Kesalahan, silakan coba lagi.*';
+    throw '*Ada Kesalahan, silakan coba lagi.*';
   }
 };
 handler.help = ['play', 'play2'].map((v) => v + ' < busqueda >');
