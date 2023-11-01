@@ -260,7 +260,7 @@ await conn.sendMessage(m.chat, {text: `Complete!`, edit: key})
 ╚══════════════════════✧
 
 ╔═══════ *⌈ JANGAN PAKAI! ⌋* ═══════✧
-║ ❐ ${usedPrefix}Alkitab
+║ ❐ ${usedPrefix}labiblia
 ╚══════════════════════✧
 
 ╔═══════ *⌈ SUARA ⌋* ═══════✧
