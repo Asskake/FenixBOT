@@ -78,17 +78,17 @@ await conn.sendMessage(m.chat, {text: `Complete!`, edit: key})
 ║ ❐ ${usedPrefix}mates *<noob/easy/medium/hard/extreme/impossible/impossible2>*
 ║ ❐ ${usedPrefix}fake *<texto1> <@tag> <texto2>*
 ║ ❐ ${usedPrefix}ppt *<kertas/gunting/batu>*
-║ ❐ ${usedPrefix}prostituto *<nama / @tag>*
-║ ❐ ${usedPrefix}prostituta *<nama / @tag>*
+║ ❐ ${usedPrefix}pelacur *<nama / @tag>*
+║ ❐ ${usedPrefix}lacur *<nama / @tag>*
 ║ ❐ ${usedPrefix}gay2 *<nama / @tag>*
-║ ❐ ${usedPrefix}lesbiana *<nama / @tag>*
+║ ❐ ${usedPrefix}lesbi *<nama / @tag>*
 ║ ❐ ${usedPrefix}pajero *<nama / @tag>*
 ║ ❐ ${usedPrefix}pajera *<nama / @tag>*
-║ ❐ ${usedPrefix}puto *<nama / @tag>*
-║ ❐ ${usedPrefix}puta *<nama / @tag>*
-║ ❐ ${usedPrefix}manco *<nama / @tag>*
+║ ❐ ${usedPrefix}sialan *<nama / @tag>*
+║ ❐ ${usedPrefix}jalang *<nama / @tag>*
+║ ❐ ${usedPrefix}bertangansatu *<nama / @tag>*
 ║ ❐ ${usedPrefix}manca *<nama / @tag>*
-║ ❐ ${usedPrefix}rata *<nama / @tag>*
+║ ❐ ${usedPrefix}tikus *<nama / @tag>*
 ║ ❐ ${usedPrefix}love *<nama / @tag>*
 ║ ❐ ${usedPrefix}doxear *<nama / @tag>*
 ║ ❐ ${usedPrefix}apakah *<text>*
